@@ -27,6 +27,10 @@ class HomeActivity : Activity() {
             val intent = Intent(applicationContext, HomeActivity::class.java)
             startActivity(intent)
         }
+        contactBt.setOnClickListener {
+            val intent = Intent(applicationContext, HomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setButtonColor() {

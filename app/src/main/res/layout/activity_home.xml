@@ -7,49 +7,56 @@
     tools:context=".HomeActivity">
 
     <Button
-        android:id="@+id/homeBt"
-        android:layout_width="0dp"
+        android:id="@+id/contactBt"
+        android:layout_width="93dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:text="Home"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Savings"
         android:textColor="#665b46"
-        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/accountBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/savingsBt" />
+
+    <Button
+        android:id="@+id/homeBt"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Home"
+        android:textColor="#665b46"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/accountBt"
-        android:layout_width="0dp"
+        android:layout_width="93dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="8dp"
         android:text="Account"
         android:textColor="#665b46"
-        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/savingsBt"
         app:layout_constraintStart_toEndOf="@+id/homeBt" />
 
     <Button
         android:id="@+id/savingsBt"
-        android:layout_width="0dp"
+        android:layout_width="93dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="8dp"
         android:text="Savings"
         android:textColor="#665b46"
-        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/accountBt" />
 
     <ImageView
         android:id="@+id/logoIv"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
         android:src="@drawable/dominionlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -95,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Due this month:"
-
+                android:layout_marginTop="4dp"
                 android:textSize="24sp" />
 
             <TextView
@@ -103,6 +110,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Power consumption: 847 kWH"
+                android:layout_marginTop="4dp"
                 android:textSize="24sp" />
 
             <View
@@ -121,6 +129,7 @@
                 android:text="Savings"
                 android:textAlignment="center"
                 android:textColor="#268fff"
+                android:layout_marginTop="4dp"
                 android:textSize="30sp" />
 
             <View
@@ -137,7 +146,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Saved so far:"
-
+                android:layout_marginTop="4dp"
                 android:textSize="24sp" />
 
             <TextView
@@ -145,6 +154,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Max savings:"
+                android:layout_marginTop="4dp"
                 android:textSize="24sp" />
 
             <View
@@ -163,6 +173,7 @@
                 android:text="Your Energy Source"
                 android:textAlignment="center"
                 android:textColor="#268fff"
+                android:layout_marginTop="4dp"
                 android:textSize="30sp" />
 
             <View
@@ -174,39 +185,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/scrollView"
                 tools:layout_editor_absoluteX="8dp" />
 
-            <TextView
-                android:id="@+id/energyOneTv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Natural Gas: 50%"
-                android:textAlignment="viewStart"
-                android:textSize="24sp"
-                tools:layout_editor_absoluteX="156dp"
-                tools:layout_editor_absoluteY="578dp" />
-
-            <TextView
-                android:id="@+id/energyTwoTv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nuclear:        33%"
-                android:textAlignment="viewStart"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/energyThreeTv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Coal:              12%"
-                android:textAlignment="viewStart"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/energyFourTv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Renewable:     1%"
-                android:textAlignment="viewStart"
-                android:textSize="24sp" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/graph1"
+                app:layout_constraintEnd_toStartOf="@+id/scrollView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/scrollView"
+                app:layout_constraintTop_toBottomOf="@+id/divider6"
+                tools:layout_editor_absoluteY="414dp" />
 
         </LinearLayout>
     </ScrollView>

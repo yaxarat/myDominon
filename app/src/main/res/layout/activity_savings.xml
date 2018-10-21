@@ -127,6 +127,7 @@
         android:layout_marginTop="7dp"
         android:text="Click here to learn how to save more."
         android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/contactBt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

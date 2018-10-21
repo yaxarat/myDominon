@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_home.*
+import java.util.*
 
 class HomeActivity : Activity() {
 

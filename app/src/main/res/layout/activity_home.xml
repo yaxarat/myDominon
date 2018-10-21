@@ -70,8 +70,6 @@
         android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toTopOf="@+id/homeBt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Due this month:                         $76.34"
+                android:text="Due this month:                          $76.34"
                 android:textSize="24sp" />
 
             <TextView
@@ -113,7 +111,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Power consumption:             748kWh"
+                android:text="Power consumption:               748kWh"
                 android:textSize="24sp" />
 
             <View
@@ -129,10 +127,10 @@
                 android:id="@+id/savingsTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:text="Savings"
                 android:textAlignment="center"
                 android:textColor="#268fff"
-                android:layout_marginTop="4dp"
                 android:textSize="30sp" />
 
             <View
@@ -149,7 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Saved so far:                              $15.30"
+                android:text="Saved so far:                               $15.30"
                 android:textSize="24sp" />
 
             <TextView
@@ -157,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Max savings:                              $45.90"
+                android:text="Max savings:                               $45.90"
                 android:textSize="24sp" />
 
             <View
@@ -173,10 +171,10 @@
                 android:id="@+id/energyyTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:text="Power Draw"
                 android:textAlignment="center"
                 android:textColor="#268fff"
-                android:layout_marginTop="4dp"
                 android:textSize="30sp" />
 
             <View
@@ -193,7 +191,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Current:                              "
+                android:text="Current:                                       2.7kWh"
                 android:textSize="24sp" />
 
             <TextView
@@ -201,7 +199,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Target:                                          3kWh"
+                android:text="Target:                                         3.0kWh"
                 android:textSize="24sp" />
 
             <View
@@ -217,10 +215,10 @@
                 android:id="@+id/energyTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:text="Your Energy Source"
                 android:textAlignment="center"
                 android:textColor="#268fff"
-                android:layout_marginTop="4dp"
                 android:textSize="30sp" />
 
             <View

@@ -4,6 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     tools:context=".ContactActivity">
+
+    <Button
+        android:id="@+id/contactBt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:textColor="#665b46"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/savingsBt" />
+
+    <Button
+        android:id="@+id/homeBt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="#665b46"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/accountBt"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/accountBt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textColor="#665b46"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/savingsBt"
+        app:layout_constraintStart_toEndOf="@+id/homeBt" />
+
+    <Button
+        android:id="@+id/savingsBt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Savings"
+        android:textColor="#665b46"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/contactBt"
+        app:layout_constraintStart_toEndOf="@+id/accountBt" />
+
+    <ImageView
+        android:id="@+id/logoIv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/dominionlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/photoIv"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoIv" />
+
+    <EditText
+        android:id="@+id/explainTv"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:hint="Describe:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoIv" />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:text="Report"
+        android:textColor="#665b46"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/accountBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explainTv" />
 
 </android.support.constraint.ConstraintLayout>

@@ -28,7 +28,7 @@ class AccountActivity : Activity() {
             startActivity(intent)
         }
         contactBt.setOnClickListener {
-            val intent = Intent(applicationContext, HomeActivity::class.java)
+            val intent = Intent(applicationContext, ContactActivity::class.java)
             startActivity(intent)
         }
     }

@@ -1,18 +1,20 @@
 package com.sensationmeter.yaxar.dominion
 
-import android.app.Activity
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.app.Activity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_home.*
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_rewards.*
 
-class HomeActivity : Activity() {
+class RewardsActivity : Activity() {
 
+    @SuppressLint("NewApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_rewards)
 
-        // Initializations
-        setButtonColor()
+        progressBar.setProgress(270, true)
 
         // Button listeners
         homeBt.setOnClickListener {
@@ -31,9 +33,8 @@ class HomeActivity : Activity() {
             val intent = Intent(applicationContext, ContactActivity::class.java)
             startActivity(intent)
         }
-    }
-
-    private fun setButtonColor() {
-        homeBt.setTextColor(0xFF3B74CD.toInt())
+        redeemBtn.setOnClickListener {
+            Toast.makeText(this, "500 pts required.", Toast.LENGTH_LONG).show()
+        }
     }
 }

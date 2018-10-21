@@ -27,7 +27,7 @@ class SavingsActivity : Activity() {
             startActivity(intent)
         }
         contactBt.setOnClickListener {
-            val intent = Intent(applicationContext, CameraActivity::class.java)
+            val intent = Intent(applicationContext, ContactActivity::class.java)
             startActivity(intent)
         }
         tempCb.setOnClickListener {
@@ -38,6 +38,10 @@ class SavingsActivity : Activity() {
         }
         lightCb.setOnClickListener {
             checkSaving()
+        }
+        clickTv.setOnClickListener {
+            val intent = Intent(applicationContext, RewardsActivity::class.java)
+            startActivity(intent)
         }
     }
 

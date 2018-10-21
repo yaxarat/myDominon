@@ -3,13 +3,13 @@ package com.sensationmeter.yaxar.dominion
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.activity_account.*
 
-class HomeActivity : Activity() {
+class AccountActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_account)
 
         // Initializations
         setButtonColor()
@@ -28,12 +28,12 @@ class HomeActivity : Activity() {
             startActivity(intent)
         }
         contactBt.setOnClickListener {
-            val intent = Intent(applicationContext, CameraActivity::class.java)
+            val intent = Intent(applicationContext, HomeActivity::class.java)
             startActivity(intent)
         }
     }
 
     private fun setButtonColor() {
-        homeBt.setTextColor(0xFF3B74CD.toInt())
+        accountBt.setTextColor(0xFF3B74CD.toInt())
     }
 }

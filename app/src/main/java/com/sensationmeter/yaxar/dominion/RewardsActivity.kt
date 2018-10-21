@@ -34,7 +34,7 @@ class RewardsActivity : Activity() {
             startActivity(intent)
         }
         redeemBtn.setOnClickListener {
-            Toast.makeText(this, "500 pts required.", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "You have 270 points, 500 pts required.", Toast.LENGTH_LONG).show()
         }
     }
 }

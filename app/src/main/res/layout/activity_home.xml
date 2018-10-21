@@ -95,7 +95,7 @@
                 android:id="@+id/divider2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:background="?android:attr/listDivider"
                 app:layout_constraintTop_toBottomOf="@+id/scrollView"
                 tools:layout_editor_absoluteX="8dp" />
@@ -104,23 +104,23 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Due this month:"
                 android:layout_marginTop="4dp"
+                android:text="Due this month:                         $76.34"
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Power consumption: 847 kWH"
                 android:layout_marginTop="4dp"
+                android:text="Power consumption:             748kWh"
                 android:textSize="24sp" />
 
             <View
                 android:id="@+id/divider3"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:background="?android:attr/listDivider"
                 app:layout_constraintTop_toBottomOf="@+id/scrollView"
                 tools:layout_editor_absoluteX="8dp" />
@@ -139,7 +139,7 @@
                 android:id="@+id/divider5"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:background="?android:attr/listDivider"
                 app:layout_constraintTop_toBottomOf="@+id/scrollView"
                 tools:layout_editor_absoluteX="8dp" />
@@ -148,23 +148,67 @@
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Saved so far:"
                 android:layout_marginTop="4dp"
+                android:text="Saved so far:                              $15.30"
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Max savings:"
                 android:layout_marginTop="4dp"
+                android:text="Max savings:                              $45.90"
                 android:textSize="24sp" />
 
             <View
                 android:id="@+id/divider4"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/energyyTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Power Draw"
+                android:textAlignment="center"
+                android:textColor="#268fff"
                 android:layout_marginTop="4dp"
+                android:textSize="30sp" />
+
+            <View
+                android:id="@+id/divider68"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Current:                              "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Target:                                          3kWh"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/divider69"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
                 android:background="?android:attr/listDivider"
                 app:layout_constraintTop_toBottomOf="@+id/scrollView"
                 tools:layout_editor_absoluteX="8dp" />
@@ -183,7 +227,7 @@
                 android:id="@+id/divider6"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:background="?android:attr/listDivider"
                 app:layout_constraintTop_toBottomOf="@+id/scrollView"
                 tools:layout_editor_absoluteX="8dp" />
@@ -191,7 +235,7 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="143dp"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/graph1"
                 app:layout_constraintEnd_toStartOf="@+id/scrollView"
